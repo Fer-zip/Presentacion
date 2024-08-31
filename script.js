@@ -1,19 +1,30 @@
 window.addEventListener('load',()=>{
+    /*Selecciona todos los elementos de la barra de navegacion*/ 
     let itemInicio = document.getElementById('itemInicio');
     let itemAbout = document.getElementById('itemAbout');
     let itemProyectos = document.getElementById('itemProyectos');
     let itemContacto = document.getElementById('itemContacto');
+    let li_navegacion = document.querySelectorAll('.lista_navegacion li');
+
+    li_navegacion.forEach(element => {
+        element.addEventListener('hover',()=>{
+            alert('hey');
+        });
+    });
+
+    /*Selecciona todos los section pero uno por uno*/ 
     let contenido_inicio = document.getElementById('contenido_inicio');
     let contenido_about = document.getElementById('contenido_about');
     let contenido_proyecto = document.getElementById('contenido_proyecto');
     let contenido_contacto = document.getElementById('contenido_contacto');
-    let section = document.querySelectorAll('section');
-    // let li = document.querySelectorAll('li');
+    let section = document.querySelectorAll('section'); //Selecciona todos los section
+
+    /*Variables animacion*/
     let letras = document.querySelectorAll('.animacion #letra');
     let barra = document.getElementById('barra')
     let index = 0;
     let showing = true;
-    
+
     let tiempo = setInterval(()=>{
         if (barra.style.display=='none') {
             barra.style.display='flex';
