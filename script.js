@@ -4,20 +4,37 @@ window.addEventListener('load',()=>{
     let itemAbout = document.getElementById('itemAbout');
     let itemProyectos = document.getElementById('itemProyectos');
     let itemContacto = document.getElementById('itemContacto');
-    let li_navegacion = document.querySelectorAll('.lista_navegacion li');
+    // let img_certificados = document.querySelectorAll('.lista_certificados img');
 
-    li_navegacion.forEach(element => {
-        element.addEventListener('hover',()=>{
-            alert('hey');
-        });
-    });
+
+    function certificado_completo(src){
+        let div = document.createElement('div');
+        let img = document.createElement('img');
+        div.className='imagen_certificado';
+        img.src=src;
+        div.append(img);
+        contenido_about.append(div);
+    }
+
+    // img_certificados.forEach(element => {
+    //     element.addEventListener('click',()=>{
+    //         if (element.style.transform == 'scale(1.2)' && element.style.boxShadow == 'rgb(23, 211, 211) 0px 0px 50px') {
+    //             element.style.transform = 'scale(1)';
+    //             element.style.boxShadow = 'none';
+    //         } else {
+    //             element.style.transform = 'scale(1.2)';
+    //             element.style.boxShadow = '0px 0px 50px rgb(23, 211, 211)';
+    //             // certificado_completo(element.src);
+    //         }
+    //     });
+    // });
 
     /*Selecciona todos los section pero uno por uno*/ 
     let contenido_inicio = document.getElementById('contenido_inicio');
     let contenido_about = document.getElementById('contenido_about');
     let contenido_proyecto = document.getElementById('contenido_proyecto');
     let contenido_contacto = document.getElementById('contenido_contacto');
-    let section = document.querySelectorAll('section'); //Selecciona todos los section
+    let article = document.querySelectorAll('article'); //Selecciona todos los section
 
     /*Variables animacion*/
     let letras = document.querySelectorAll('.animacion #letra');
@@ -53,30 +70,30 @@ window.addEventListener('load',()=>{
         }
     }, 400);
 
-    function ocultarSection() {
-        section.forEach(element =>{
+    function ocultarArticle() {
+        article.forEach(element =>{
             element.style.display = 'none';
         });
     }
 
-    function mostrarSection(item){
-        ocultarSection();
+    function mostrarArticle(item){
+        ocultarArticle();
         item.style.display = 'flex'
     }
 
     itemInicio.addEventListener('click',()=>{
-        mostrarSection(contenido_inicio);
+        mostrarArticle(contenido_inicio);
     });
 
     itemAbout.addEventListener('click',()=>{
-        mostrarSection(contenido_about);
+        mostrarArticle(contenido_about);
     });
 
     itemProyectos.addEventListener('click',()=>{
-        mostrarSection(contenido_proyecto);
+        mostrarArticle(contenido_proyecto);
     });
 
     itemContacto.addEventListener('click',()=>{
-        mostrarSection(contenido_contacto);
+        mostrarArticle(contenido_contacto);
     });
 });

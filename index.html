@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <title>Mi portafolio</title>
-    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="shortcut icon" href="img/icono/icono.png" type="image/x-icon">
 </head>
 <body>
     <header>
@@ -21,16 +21,16 @@
         </nav>
     </header>
     <main>
-        <section class="contenido_inicio" id="contenido_inicio">
+        <article class="contenido_inicio" id="contenido_inicio">
             <div class="texto">
                 <h1>JEAN PIERE<br> 
                     FERNANDEZ TORRES</h1>
                 <p>Estudiante de ingenieria de software</p>
                 <p>Bienvenid@ a mi humilde portafolio. <br> Se que no es el mejor ni mucho menos, pero almenos tiene mas desarrollo que cualquier país de latinoamerica.</p>
                 <div class='link'>
-                    <a class="cv" href="recursos/cv.pdf" download="cv.pdf"><img src="img/cv.png" width="40px" height="40px" alt="cv"></a>
-                    <a class="github" href="#"><img src="img/github.png" alt="github"></a>
-                    <a href="https://www.linkedin.com/in/jean-piere-fernandez-trres-19b2a82b9" target="_blank"><img src="img/linkedin.png" alt="linkedin" width="40px" height="40px"></a>
+                    <a class="cv" href="recursos/cv.pdf" download="cv.pdf"><img src="img/icono/cv.png" width="40px" height="40px" alt="cv"></a>
+                    <a class="github" href="#"><img src="img/icono/github.png" alt="github"></a>
+                    <a href="https://www.linkedin.com/in/jean-piere-fernandez-trres-19b2a82b9" target="_blank"><img src="img/icono/linkedin.png" alt="linkedin" width="40px" height="40px"></a>
                 </div>
             </div>
             <div class="animacion">
@@ -43,12 +43,12 @@
                 <p id="letra">></p>
                 <p class="barra" id="barra">|</p>
             </div>
-        </section>
-        <section class="contenido_about" id="contenido_about">
+        </article>
+        <article class="contenido_about" id="contenido_about">
             <div class="informacion">
-                <article class="sobremi">
+                <section class="sobremi">
                     <div class="texto_sobremi">
-                        <p class="titulo">Sobre mi</p>
+                        <h2 class="titulo">Sobre mi</h2>
                         <div class="caja_texto_imagen">
                             <div class="contenido">
                                 <p>Hola, me presento mi nombre es Jean Piere Fernandez Torres, soy un joven estudiante de ingenieria de software.</p>
@@ -58,46 +58,54 @@
                             <img src="" alt="" width="200px" height="200px">
                         </div>
                     </div>
-                </article>
-                <article class="conocimiento">
+                </section>
+                <section class="habilidades">
                     <div class="lenguajes">
-                        <p class="titulo">Conocimientos</p>
+                        <h2 class="titulo">Habilidades</h2>
                         <ul class="list_programacion">
-                            <li class="html"><img src="img/html.png" alt="html" width="40px" height="40px">HTML</li>
-                            <li class="css"><img src="img/css.png" alt="css" width="40px" height="40px">CSS</li>
-                            <li class="js"><img src="img/javascript.png" alt="js" width="40px" height="40px">JavaScript</li>
-                            <li class="python"><img src="img/python.jpg" alt="python" width="40px" height="40px">Python</li>
-                            <li class="php"><img src="img/php.png" alt="php" width="45px" height="40px">PHP</li>
-                            <li class="mysql"><img src="img/mysql.png" alt="mysql" width="40px" height="40px">MySQL</li>
+                            <li><img src="img/icono/html.png" alt="html"></li>
+                            <li><img src="img/icono/css.png" alt="css"></li>
+                            <li><img src="img/icono/javascript.png" alt="js"></li>
+                            <li><img src="img/icono/python.jpg" alt="python"></li>
+                            <li><img src="img/icono/php.png" alt="php"></li>
+                            <li><img src="img/icono/mysql.png" alt="mysql"></li>
+                            <li><img src="img/icono/java.svg" alt="java"></li>
+                            <li><img src="img/icono/django.webp" alt="django"></li>
+                            <li><img src="img/icono/reactjs.png" alt="reactjs"></li>
                         </ul>
                     </div> 
-                </article>
-                <article class="certificados">
-                    <div class="certificados">
-                        <p class="titulo">Certificados</p>
-                        <ul class="lista_certificados">
-                            <li><iframe src="recursos/Bases de Git y Github - desafio latam.pdf" frameborder="0" height="200"></iframe></li>
-                            <li><iframe src="recursos/Database Design - oracle academy.pdf" frameborder="0" height="200"></iframe></li>
-                            <li><iframe src="recursos/Database Programming with sql - oracle academy.pdf" frameborder="0" height="200"></iframe></li>
-                            <li><iframe src="recursos/get connected - cisco.pdf" frameborder="0" height="200"></iframe></li>
-                            <li><iframe src="recursos/Java Foundations - oracle academy.pdf" frameborder="0" height="200"></iframe></li>
-                        </ul>
-                    </div>
-                </article>
+                </section>
             </div>
-        </section>
-        <section class="contenido_proyecto" id="contenido_proyecto">
-            <div class="texto">
-                <p>Tercer Contenido</p>
-                <p>Proyectos</p>
+        </article>
+        <article class="contenido_proyecto" id="contenido_proyecto">
+            <div class="caja_proyecto">
+                <h2 class="titulo">Proyectos</h2>
+                <div class="lista_proyectos">
+                    <section class="proyecto">
+                        <h3>Pokedex</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iste consequuntur ex perspiciatis qui, obcaecati aliquid, repellendus commodi sapiente accusantium beatae autem sed possimus alias doloremque recusandae molestiae, sequi quam unde.</p>
+                    </section>
+                    <section class="proyecto">
+                        <h3>Calculadora</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus nobis harum aspernatur magni sit maiores cumque, inventore nesciunt, et itaque non. Esse minus, tempore aut aspernatur porro assumenda repudiandae incidunt?</p>
+                    </section>
+                    <section class="proyecto">
+                        <h3>Lista de tareas</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque eum perferendis cumque animi numquam, voluptatem asperiores sapiente recusandae dolor rerum minima exercitationem ratione, nostrum, ipsa non delectus impedit obcaecati hic?</p>
+                    </section>
+                    <section class="proyecto">
+                        <h3>Inicio de Sesión</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus odio eos voluptates, quam voluptas error? Laborum nulla optio at mollitia amet voluptatibus voluptatem earum explicabo aliquam error? Reiciendis, tenetur esse.</p>
+                    </section>
+                </div>
             </div>
-        </section>
-        <section class="contenido_contacto" id="contenido_contacto">
+        </article>
+        <article class="contenido_contacto" id="contenido_contacto">
             <div class="texto">
                 <p>Cuarto Contenido</p>
                 <p>Contactame bb</p>
             </div>
-        </section>
+        </article>
     </main>
     <footer>
         <p>Intento de portafolio</p>

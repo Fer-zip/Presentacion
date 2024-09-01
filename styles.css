@@ -58,10 +58,11 @@ main{
     margin: 11px;
 }
 
-section{
-    margin: 0 13%;
+article{
+    margin: 0 auto;
     min-height: 80vh;
     padding: 20px 10px;
+    max-width: 80%;
 }
 
 p{
@@ -82,6 +83,7 @@ p{
     flex-direction: column;
     justify-content: space-evenly;
     max-width: 60%;
+    margin: 2%;
 }
 
 .texto p{
@@ -113,11 +115,11 @@ p{
 .animacion{
     display: flex;
     align-items: center;
-    min-width: 30%;
-    max-width: 30%;
+    max-width: 40%;
     min-height: 100%;
-    margin: 0 auto;
+    margin: 0 5%;
     padding: 5px;
+    justify-content: start;
 }
 
 .barra{
@@ -146,16 +148,13 @@ h1{
 /*--------------ABOUT--------------*/
 
 .contenido_about{
-    display: flex;
+    display: none;
     align-items: center;
 }
 
-article{
-    margin: 10px;
-}
-
 .informacion{
-    display: grid;
+    display: flex;
+    flex-direction: column;
 }
 
 .sobremi{
@@ -200,60 +199,73 @@ article{
 }
 
 .lenguajes{
-    margin: 10px;
+    margin: 15px;
 }
 
-.conocimiento{
-    border-radius: 10px;
+.habilidades{
+    display: flex;
+    align-items: center;
 }
 
-.conocimiento p{
+.habilidades p{
     margin: 10px;
 }
 
 .list_programacion{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5%;
-    /* border: solid 1px; */
-    background-color: transparent;
-    margin: 0 auto;
-    max-width: 80%;
-    margin-top: 4%;
+    display: flex;
+    margin: 4% auto;
+    max-height: 10%;
 }
 
 .list_programacion li{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    margin: 10px 0;
-    min-height: 10vh;
-    font-size: 0.7em;
-    /* font-family: 'Mi fue'; */
+    margin: 10px auto;
+    background-color: transparent;
+    max-width: 5%;
 }
 
 .list_programacion img{
     background-color: transparent;
+    width: 100%;
+    align-self: center;
+    padding: 5px;
 }
 
-.lista_certificados{
-    display: flex;
-    max-width: 80vh;
-    /* margin: 3% auto; */
-}
-
-/* .lista_certificados li{
-    min-height: 100%;
-} */
-
-.lista_certificados li iframe{
-    /* height: 200%; */
-}
 
 /*--------------PROYECTO--------------*/
 
 .contenido_proyecto{
-    display: none;
+    display: flex;
+}
+
+.caja_proyecto{
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+}
+
+.lista_proyectos{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 5%;
+    gap: 10%;
+    margin: 2% auto;
+    max-width: 90%;
+}
+
+.proyecto h3{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 1%;
+    background-color: transparent;
+    font-size: 1.3em;
+}
+
+.proyecto{
+    background-color: tomato;
+    border-radius: 15px;
+    padding: 2vh;
 }
 
 /*--------------CONTACTO--------------*/
