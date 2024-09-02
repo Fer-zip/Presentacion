@@ -12,9 +12,14 @@
     margin: 0;
     padding: 0;
     color: white;
-    background-color: rgb(17, 8, 44);
+    background-color: transparent;
     font-family: 'MiFuente', sans-serif;
     font-size: 16px;
+    text-decoration: none;
+}
+
+body{
+    background-color:  rgb(17, 8, 44);
 }
 
 /*--------------Navegacion--------------*/
@@ -67,7 +72,6 @@ article{
 
 p{
     font-family: 'Courier New', Courier, monospace;
-    background-color: transparent;
 }
 
 /*--------------INICIO--------------*/
@@ -237,41 +241,122 @@ h1{
 /*--------------PROYECTO--------------*/
 
 .contenido_proyecto{
-    display: flex;
+    display: none;
 }
 
 .caja_proyecto{
     display: flex;
     flex-direction: column;
     min-width: 100%;
+    margin: 15px;
 }
 
 .lista_proyectos{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 5%;
-    gap: 10%;
+    grid-template-columns: auto;
     margin: 2% auto;
     max-width: 90%;
 }
 
 .proyecto h3{
     font-family: 'Courier New', Courier, monospace;
-    margin: 1%;
     background-color: transparent;
     font-size: 1.3em;
+    color: rgb(23, 211, 211);
 }
 
 .proyecto{
-    background-color: tomato;
+    background-color: rgb(38, 46, 53);
     border-radius: 15px;
+    margin: 2% auto;
     padding: 2vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+}
+
+.proyecto img{
+    width: 100%;
+    margin: auto;
+    align-content: center;
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.texto_proyecto{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    min-height: 80%;
+    justify-content: space-evenly;
+    margin: 1% 2%;
+}
+
+.texto_proyecto a{
+    align-self: center;
+    background-color: rgb(23, 211, 211);
+    padding: 1.5%;
+    color: black;
+    border-radius: 10px;
+    margin: 1% auto;
+}
+
+.texto_proyecto a:hover{
+    transform: scale(1.1);
+    transition: transform 0.5s;
 }
 
 /*--------------CONTACTO--------------*/
 
 .contenido_contacto{
-    display: none;
+    display: flex;
+}
+
+.formulario{
+    background: rgb(38, 46, 53);
+    padding: 2%;
+    margin: 3% auto;
+    min-width: 40%;
+    max-width: 60%;
+    min-height: 70%;
+    border-radius: 10px;
+}
+
+.formulario form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+.caja_contacto{
+    margin: 15px;
+    min-width: 100%;
+}
+
+.formulario label,input{
+    margin: 1% 0;
+}
+
+.formulario label{
+    color: rgb(23, 211, 211);
+}
+
+.formulario input[type='text'],[type='email'],textarea{
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.formulario input[type='submit']{
+    margin: 0 auto;
+    margin-top: 5%;
+    background-color: white;
+    max-height: 20%;
+    color: black;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
 }
 
 /*--------------FOOTER--------------*/
@@ -294,3 +379,7 @@ footer{
     background-color: rgb(23, 211, 211); /* Color del thumb */
     border-radius: 5px; /* Bordes redondeados */
 }
+
+
+
+/*background: linear-gradient(colo1,color2,color3)*/

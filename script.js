@@ -4,30 +4,6 @@ window.addEventListener('load',()=>{
     let itemAbout = document.getElementById('itemAbout');
     let itemProyectos = document.getElementById('itemProyectos');
     let itemContacto = document.getElementById('itemContacto');
-    // let img_certificados = document.querySelectorAll('.lista_certificados img');
-
-
-    function certificado_completo(src){
-        let div = document.createElement('div');
-        let img = document.createElement('img');
-        div.className='imagen_certificado';
-        img.src=src;
-        div.append(img);
-        contenido_about.append(div);
-    }
-
-    // img_certificados.forEach(element => {
-    //     element.addEventListener('click',()=>{
-    //         if (element.style.transform == 'scale(1.2)' && element.style.boxShadow == 'rgb(23, 211, 211) 0px 0px 50px') {
-    //             element.style.transform = 'scale(1)';
-    //             element.style.boxShadow = 'none';
-    //         } else {
-    //             element.style.transform = 'scale(1.2)';
-    //             element.style.boxShadow = '0px 0px 50px rgb(23, 211, 211)';
-    //             // certificado_completo(element.src);
-    //         }
-    //     });
-    // });
 
     /*Selecciona todos los section pero uno por uno*/ 
     let contenido_inicio = document.getElementById('contenido_inicio');
@@ -96,4 +72,11 @@ window.addEventListener('load',()=>{
     itemContacto.addEventListener('click',()=>{
         mostrarArticle(contenido_contacto);
     });
+
+    const formulario = document.getElementById('formulario');
+    console.log(formulario.nombre);
+    console.log(formulario.correo);
+    console.log(formulario.asunto);
+    console.log(formulario.comentarios);
+
 });
